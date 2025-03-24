@@ -1,5 +1,5 @@
 <!--
-	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/en/editor.html?c=area-basic&code=PYBwLglsB2AEC8sDeAoWtJgDYFMBcya6GOAHmAQEQBqwWArgLY6wAmLAxgBb0BuAhrH4cm9LP1aCQwAE5DowWAAoATAAYAjABYhsdSoDMASlgBaWADF-ALxzRJsAML8Z0fgC-ARoPMAVfiA4MsAAh2awAAoAQpREAL4ANESkAIKkEADOBKjEGACegQQA5Bz8YDgA5rJ5RUm5nsD09i55AOIBBGAy9Dh1xJJg_AQA2uraCXqaAKwTYwBss5oA7IsaAByrAJyL6jsaOyo7BgC68X15aZnZROhgBfiwRQIMOEVnRGDAdJAg17ldEAqFSCxX46QytRusGkGQgkBgBAAZk0OPC4EpwCYcrlYDIcGB6K5YMNwMM1McJkUNGoAKRFY4AbihcXe6AG_AAWl9GCModj_vdihBoLD2JCcbAMoMZBRYGo-rk7KwCOpmQrCBKpS5ZfKoeglSq1MyiBSiBkghAcFliXy9WwykNiVo1FoAHQLWAGNZzV0rPSbGZ6DQaV2BpZzN0bWBaTZLV3bWBTTYhgwTL1rUMTTZe91p8Pu00Su6FR5YYWvdXoFw4fgAZTuuGyLNyzdgpziDKAA
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/en/editor.html?c=area-basic&code=PYBwLglsB2AEC8sDeAoWtJgDYFMBcya6GOAHmAQEQBqwWArgLY6wAmLAxgBb0BuAhrH4cm9LP1aCQwAE5DowWAAoATAAYAjABYhsdSoDMASlgBaWADF-ALxzRJsAML8Z0fgC-ARoPMAVfiA4MsAAh2awAAoAQpREAL4ANESkAIKkEADOBKjEGACegQQA5Bz8YDgA5rJ5RUm5nsD09i55AOIBBGAy9Dh1xJJg_AQA2uraCXqaAKwTYwBss5oA7IsaAByrAJyL6jsaOyo7BgC68X15aZnZROhgBfiwRQIMOLU3sG7MVI48AsqMjCMlD6iSIYGAdEgIGuuS6EAqFSCxX46Qyb1y0gyEEgMAIADMmhwcXAlOATDlcrAZDgwPRXLBhuBhmpjhMiho1ABSIrHADc7ziZyIA34AC0IYwRu8KbD7sUINAsex0ZSMoMZBRYGo-rk7KwCOoBTrCJTYGqXJrte90HqDWoBURWUQMkEIDgsgzpdaPvwvrBKD8-IIlACgcb0CKRlo1FoAHQLWAGNZzWMrPSbGZ6DQaWOZpZzOMbWBaTZLWPbWBTTY5gwTJNrXMTTZJ-N1_Pxp2mu6FR5YBWvcNCan8ADKd1w2UFuSnsFOcV5QA
 	⚠ Please be aware that this chart is not an official demo of Apache ECharts but is made by user-generated code.
 -->
 <!DOCTYPE html>
@@ -53,7 +53,8 @@
     data: [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
   },
   yAxis: {
-    type: 'value'
+    type: 'value',
+    name: "Chuva (mm)",
   },
   tooltip: {
     trigger: 'axis',
@@ -74,6 +75,7 @@
   ],
   series: [
     {
+      name: "Chuva (mm)",
       data: [404.6, 386.7, 295, 211.5, 764.8, 497.9, 591.3, 388.5, 938.6, 376.6],
       type: 'line',
       areaStyle: {}
