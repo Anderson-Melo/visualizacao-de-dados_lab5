@@ -1,5 +1,5 @@
 <!--
-	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/en/editor.html?c=bar-simple&code=DYUwLgBAJghmMQLwQgbQEwA4AMAaCALNgQHQBs-AzJmSQOz7oCcArIwIzslsR1mmZ8BJnRJN8LJl0pVMmbvibVyVPuQC6AbgBQoSADcYAJwCWMAMYwA9kjRbtAMytGIACkMuTidpogmIADzQcDAkoAB2AOZgABa-JgDUCQCUAN7aKB5mllYkAA4ArgDOMa6w8Kgm6hAAtMEV_nXs6sk6AL7aVnlgJlbhtukoPWCgAFwQgygQYCAAHmDjAEQAasZmAOcAxzawEOYxBYYQFgUAtgXAMLvhCABiMABeIOG7AMLGNwBfAEYIIKcQIwgS5bGzWY7hMHhGamZxuZ5gIEQdDYdgECAgZHYdCUZKLDIQNq4AmzACCsxMRXGkyGAE88iBxgBySwzSLOWlM4lTeowcYYVEyLFoxiongo9gUYUMYWCYXiLEo0XodjK9DKyjqAlEgm08mU6kEukM5mGYAFEBco0QG6nRkQRavA5HVynU547mEz1gKxWYA9PKGnmIkyRSIgIzMmAUopWnl5KxFEw9PrjBwFcLmFP9VzdZITa0oIFgApGfqobqobDqfBM9jYACkTPsPI6KB1KHKMAAWr7TvzrTSpmB6famSZwkmoJbPTyivAjAsIHhCxiXuMUdaO1Mhyh58YlyueShnlAN9gtwSawSihGTCAqWhB6uu-MshZrLPh6Pmb8jHHj1te1HWdBBXXdRYvxQAB6aC9j9Zw0wzLNehzPJjBgU4inzXcIFg49i1Lfp0KMTCihIM0LQgAA-ZBsAgAB-B0AGJsDY7BbluRYICWZjOPY7BFh0Y88Lg9tLxQLU2k0IA
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/en/editor.html?c=bar-simple&code=DYUwLgBAJghmMQLwQNoCYAcAGANBALFvgHQBseAzBqcQOx5oCcArAwIxvGsS2kkZ58jWsUZ5mjThUoYMXPIyplKvMgF0A3AFgAUKEgA3GACcAljADGMAPZJUm3QDNrxiAAojr03bYaI3gB5oOBhiUAA7AHMwAAs_UwBqBIBKCABvXQgIT3Mra2IABwBXAGcYt1h4FFM1CABaYKrvBrY1ZO0dAF9dXWsCsFNrcLsMnSyBsFAALnTMrIgwEAAPMBmAIgA1E3MAc4Bj21gICxiiowhLIoBbIuAYI_CEADEYAC8QcKOAYRNHgC-AEYIEBXCDGEB3fa2GwXcLQ8KLMwudwfMDgiBoLBsfAQEAYrBoCjJNZzTo4OZLACCS1MJRmo3mCwAngUQDMAORWRaRFxM9nksbzSowGboLH4BhY7iYtjkfFsejygTysT4zGStBsDVoDUUNSkgVZJnU2n0ubjFlsiDsozAIogfnmiCPK5WtZfU7nNxXK7Ew3zEpWaYLYz2g1zMDWazAAYFM2C8ZmSKREDGDkwGkldnhwXCgBaUauoogToZjOZrI5pnCJVMUAd_sZVMzAElPssZrgnVkSvBjKsIF2E_MPlAZmwsFgnWTS92K1b2SVgHXU47h1lm7S2_Wlp3GwG-wOh-XcZ9x5Pp_uy4ywJaOUuV8Y1yfja327vB_uezFrAB3GZovaX5gqYkQxAO7JoMwBRLM-5a9iYR7AaO57HuWjimMAoDGF80YuByxiRECbi4KROBYMQaDJHBjJ3ACEJPC4VxwIiMweDAdogKkiAAHwQAABgAJGkACycAxMQxjWEUnzsZxySdBAPr8dOcxqP6JSpqYIB0qgs7ro0IrZNslg2MBt6VtaQJPsBLpulsZgwFCwQQB6ZwIN6vprMBpiLFcADKt7Bte5YWHhaYQI4MkWAMQzuAUJgwFcJSpCFJ7gmARTGMMCXGElJTELa9oQDxyBYBAAD8EBrAAxJOk5PE8awQOsNWNfVWBrB0J5ZN0BkzgZMDhKYzGxeEAAiWVwIM4QAKoFJUVrYGhjJDSN01DAAojAtZRPNi0chYRQAqYFgAPJFGA2bDn1WT6l0GhAA
 	⚠ Please be aware that this chart is not an official demo of Apache ECharts but is made by user-generated code.
 -->
 <!DOCTYPE html>
@@ -43,48 +43,64 @@
     
     var option;
 
-    let data =  [280, 404.6, 386.7, 295, 211.5, 764.8, 497.9, 591.3, 388.5, 938.6, 376.6];
+    let data = [280, 404.6, 386.7, 295, 211.5, 764.8, 497.9, 591.3, 388.5, 938.6, 376.6];
 let variacao = [];
-for (var i=1; i < data.length; i++){
+for (var i = 1; i < data.length; i++) {
   variacao.push(data[i] - data[i - 1]);
 }
+
 option = {
   title: {
     text: "Variação da chuva acumulada na Fazenda Carnaúba em relação ao ano anterior (entre 2014 e 2023)"
   },
   xAxis: {
     type: 'category',
-    data: [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
+    data: [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
   },
   yAxis: {
     type: 'value',
     name: "Chuva (mm)",
+    scale: true
   },
   tooltip: {
-    trigger: 'axis',
-    position: function (pt) {
-      return [pt[0], '10%'];
-    }
+    trigger: 'axis'
   },
-  dataZoom: [
+  dataZoom: [ 
     {
       type: 'inside',
+      xAxisIndex: 0,
       start: 0,
-      end: 20
+      end: 100
     },
     {
+      type: 'slider',
+      xAxisIndex: 0,
       start: 0,
-      end: 20
+      end: 100
+    },
+    {
+      type: 'slider',
+      yAxisIndex: 0,
+      show: true,
+      right: '25px',
+      start: 0,
+      end: 100,
+      fillerColor: 'rgba(0,0,0,0.2)',
+      labelFormatter: (value) => `${Math.round(value)} mm`
     }
   ],
   series: [
     {
       data: variacao,
       type: 'bar',
-      name: "Chuva (mm)",
-      // color: function (params) {
-      //     return params.value >= 0 ? "#0000FF" : "#FF0000";
-      //   }
+      name: "Variação da Chuva (mm)",
+      itemStyle: {
+        color: function (params) {
+          return params.value >= 0 ? "#0000FF" : "#FF0000";
+        }
+      },
+      animationDurationUpdate: 800,
+      animationEasingUpdate: 'cubicOut'
     }
   ]
 };
